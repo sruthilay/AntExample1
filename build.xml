@@ -7,12 +7,12 @@
 		</fileset>
 	</path>
 	
-	<target name="init">
+	<target name="inits">
 		<mkdir dir="build/classes"/>
 		<mkdir dir="dist" />
 	</target>
 	
-	<target name="compile" depends="init" >
+	<target name="compile" depends="inits" >
 		<javac destdir="build/classes" debug="true" srcdir="src">
 			<classpath refid="compile.classpath"/>
 		</javac>
